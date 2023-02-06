@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    background-color: #000824;
+    font-family: 'Roboto Light', arial;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    min-height: 10vh;
+    width: 95%;
+    margin-left: 5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: space-between;
+    user-select:none;
+}
+
+.logo{
+    margin: 25px 0 0 8%;
+    font-family: 'Roboto Bold', arial;
+    font-size: 24px;
+    display: flex;
+    align-items: flex-start;
+}
+.logo-part{
+    margin: 3px 0 0  5px;
+    font-family: 'Roboto Regular', arial;
+    font-size: 16px;
+    border-bottom: 2px solid #00fcff;
+}
+
+nav{
+    margin: 35px 85px 0 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font: normal 11px 'Roboto Light', arial;
+}
+nav a{
+    display: flex;
+}
+nav img{
+    width: 24px;
+    height: 24px;
+}
+nav p{
+    padding: 5px 0 0 7px;
+}
+.menu{
+    position: absolute;
+    right: 25px;
+    top: 35px;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    min-height: 85vh;
+    justify-content: space-between;
+}
+.background-text{
+    font-family: 'Gobold Bold', regular;
+    z-index: -1;
+    opacity: 20%;
+    font-size: 100vh;
+    user-select: none;
+    overflow: hidden;
+    position: absolute;
+}
+.soundblue{
+    position: fixed;
+    bottom: 40%;
+}
+.edio{
+    position: fixed;
+    top: 40%;
+}
+
+.available-colours{
+    text-align: center;
+    margin: 10% 0 10% 5%;
+    width: 100px;
+    height: 330px;
+    font-size: 14px;
+    user-select: none;
+}
+.available-colours p{
+    letter-spacing: 2px;
+}
+.available-colours span{
+    font-size: 20px;
+}
+.available-colours ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-width: 3px 2px;
+    border-style: ridge;
+    border-image: 
+    linear-gradient(
+        to bottom, 
+        #00d2ff,
+        rgba(0, 8, 36, 0.1)) 1;
+}
+
+.available-colours li{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+.blue{ background-color: #008aff; }
+.white{background-color: #ffffff; }
+.cyan{ background-color: #00fff6; }
+.red{ background-color: #ff0000; }
+.yellow{ background-color: #ffea00; }
+.product{
+    width: 600px;
+    margin: 5% 0 5% 0;
+    display: flex;
+    user-select: none;
+    height: 100%;
+}
+.select-product{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.select-product p{
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    color: #dddfe3;
+    font: normal 10px 'Roboto Thin', arial;
+    padding-bottom: 7px;
+    align-self: flex-end;
+}
+.blue-line{
+    width: 195px;
+    height: 3px;
+    background: linear-gradient(to right, #00e9fe, #008aff);
+    align-self: flex-end;
+}
+.headphones{
+    display: flex;
+    align-items: first baseline;
+}
+.product-blu, .product-edio{
+    width: 240px;
+    font-size: 140px;
+    line-height: 170%;
+    letter-spacing: -35px;
+    font-weight: 900;
+    transform:scaleY(2);
+}
+.product-edio{
+    font-size: 130px;
+}
+.product-headphones img{
+    position: absolute;
+}
+.main-headphones{
+    margin: 15px 0 0 40px;
+}
+.product-headphones{
+    position: absolute;
+    margin-left: 180px;
+    z-index: 1;
+}
+
+
+
+
+
+
+aside{
+    width: 240px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    user-select: none;
+}
+.asideOFF{
+    visibility: hidden;
+}
+.arrows{
+    width: 20px;
+    height: 20px;
+    margin: 30px 20px;
+}
+aside ul{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+aside li{
+    width: 80px;
+    height: 95px;
+    background-color: white;
+}
+aside li img{
+    margin: 15px 0 15px 20px;
+}
+.selected-product{
+    display: flex;
+}
+.selected-image{
+    width: 135px;
+    height: 125px;
+    background: linear-gradient(#00d2ff, #076ffd);
+}
+.selected-image img{
+    margin: 15px 30px;
+}
+.selected-text{
+    font: normal 51px 'Roboto Regular', arial;
+    color: #1f263f;
+    font-weight: 900;
+    transform:scaleY(1.2);
+    line-height: 100%;
+    padding: 10px 10px 0 0;
+}
+.selected-blu{
+    font-size: 63px;
+}
+.grey-line{
+    height: 1px;
+    width: 73px;
+    background-color: #c9cbd3;
+    margin-left: 6px;
+}
+.selected-arrow{
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    min-height: 15vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    font-family: 'Roboto Regular', arial;
+}
+.footer-blue{
+    background-color: #000724;
+    width: 20%;
+}
+.payment{
+    margin: 25px 35% 25px 30%;
+}
+.footer-blue p{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.payment img{
+    padding: 2%;
+}
+.footer-black{
+    width: 80%;
+    display: flex;
+}
+.features{
+    width: 50%;
+    margin: 25px 1% 25px 5%;
+}
+.features p{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin: 0 80% 15px 0;
+    letter-spacing: 3px;
+}
+.features ul{
+    display: flex;
+    font: 14px 'Roboto Light', arial;
+    list-style: square inside url(img/icon.png);
+}
+.ul-right{
+    margin-left: 60px;
+}
+.add{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.actions{
+    width: 260px;
+    height: 60px;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    user-select:none;
+}
+.btn-add button{
+    box-sizing: content-box;
+    border-radius: 25px;
+    background-color: #00eaff;
+    padding: 5px 15px 5px 5px;
+    width: 170px;
+    height: 30px;
+    font: bold 14px 'Roboto Medium', arial;
+}
+.follow{
+    width: 40px;
+    height: 40px;
+}
+.like{
+    position: absolute;
+    padding: 7px 0 0 7px;
+}
+.likeOFF{
+    visibility: hidden;
+}
+.likeON{
+    visibility: visible;
+}
+.arrow{
+    position: absolute;
+    padding-left: 155px;
+    padding-top: 12px;
+}
+.btn-add:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1575px){
+    .payment img{
+        margin-right: 100%;
+    }
+}
+@media screen and (max-width: 1120px){
+    main{
+        flex-wrap: wrap;
+    }
+    .product{
+        order: 3;
+        margin: 0 0 10% 10%;
+    }
+}
+@media screen and (max-width: 800px){
+    .features ul{
+        display: block;
+    }
+    .ul-right{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+        width: 100%;
+        margin: 0;
+    }
+    footer{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .footer-blue{
+        width: 100%;
+    }
+    .footer-black{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .features{
+        width: 100%;
+        text-align: left;
+    }
+    .features p{
+        margin: 0 0 15px 0;
+    }
+    .follow{
+        margin: 0;
+    }
+    .add{
+        width: 100%;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    .payment{
+        margin: 25px 0 25px 0;
+        text-align: left;
+    }
+    .payment p, .features p{
+        margin-right: 50%;
+    }
+}
+@media screen and (max-width: 700px){
+    .product{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 625px){
+    .product{
+        flex-direction: column;
+    }
+    .product-headphones{
+        position: relative;
+        margin: 0;
+        height: 550px;
+    }
+}
+@media screen and (max-width: 480px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 100px;
+    }
+    nav, .logo{
+        margin: 0;
+    }
+    .menu{
+        right: 15px;
+        top: 15px;
+    }  
+}
+@media screen and (max-width: 300px){
+    .follow button{
+        width: 70px;
+        height: 30px;    
+    }
+    header{
+        min-height: 250px;
+        justify-content: space-around;
+    }
+    nav{
+        margin-right: 70%;
+        flex-direction: column;
+        align-items: last baseline;
+    }
+    nav a{
+        margin-bottom: 20px;
+    }
+    .menu{
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}
+@media screen and (max-width: 170px){
+    .logo{
+        font-size: 20px;
+    }
+    .logo-part{
+        font-size: 12px;
+    }
+}
